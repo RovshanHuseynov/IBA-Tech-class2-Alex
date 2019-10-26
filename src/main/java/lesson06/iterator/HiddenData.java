@@ -6,7 +6,8 @@ import java.util.List;
 
 public class HiddenData implements Iterable<String> {
   private final List<String> months = Arrays.asList(
-      "Jan","Feb","Mar","Apr","May");
+      "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+      "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
 
   @Override
   public Iterator<String> iterator() {

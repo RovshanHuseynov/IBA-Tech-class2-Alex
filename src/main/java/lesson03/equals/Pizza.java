@@ -1,6 +1,8 @@
 package lesson03.equals;
 
-public class Pizza {
+public class Pizza
+//    implements Comparable<Pizza>
+{
   private int size;
 
   public Pizza(int size) {
@@ -27,6 +29,15 @@ public class Pizza {
     } else {
       return false;
     }
-
   }
+
+  @Override
+  public String toString() {
+    return String.format("Pizza: %d", this.size);
+  }
+
+//  @Override
+//  public int compareTo(Pizza that) {
+//    return this.size - that.size;
+//  }
 }
