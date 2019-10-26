@@ -37,7 +37,8 @@ public class IterationWays {
     System.out.println("Approach 3. direct iterator usage with while-do");
     Iterator<String> it = data.iterator();
     while (it.hasNext()) {
-      System.out.printf(">> %s <<\n", it.next());
+      String item = it.next();
+      System.out.printf(">> %s <<\n", item);
     }
 
     System.out.println("Approach 4. collections embedded forEach iterator");
