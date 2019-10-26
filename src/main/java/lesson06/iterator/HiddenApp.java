@@ -7,13 +7,15 @@ public class HiddenApp {
     HiddenData months = new HiddenData();
 
     for (String month: months) {
-      System.out.println(month);
+      System.out.printf("** %s **\n", month);
     }
 
     Iterator<String> it = months.iterator();
     while (it.hasNext()) {
-      System.out.println(it.next());
+      System.out.printf(">> %s <<\n", it.next());
     }
+
+    months.forEach(m -> System.out.printf("<< %s >>\n", m));
 
   }
 }

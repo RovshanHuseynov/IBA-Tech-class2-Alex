@@ -10,6 +10,22 @@ public class HiddenData implements Iterable<String> {
 
   @Override
   public Iterator<String> iterator() {
-    return null;
+
+    Iterator<String> iterator = new Iterator<String>() {
+
+      int index = 0;
+
+      @Override
+      public boolean hasNext() {
+        return index < months.size();
+      }
+
+      @Override
+      public String next() {
+        return months.get(index++);
+      }
+    };
+
+    return iterator;
   }
 }
