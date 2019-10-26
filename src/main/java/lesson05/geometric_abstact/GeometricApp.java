@@ -1,6 +1,10 @@
 package lesson05.geometric_abstact;
 
+import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
+
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.function.Consumer;
 
 public class GeometricApp {
@@ -67,5 +71,10 @@ public class GeometricApp {
     }
 
     System.out.printf("Total square is:%d\n", total[0]);
+
+    Collections.sort(figures,
+        (o1, o2) -> o1.area() - o2.area());
+    figures.forEach(f -> System.out.println(f));
+
   }
 }
