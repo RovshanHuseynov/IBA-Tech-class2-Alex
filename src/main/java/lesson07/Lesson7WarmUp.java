@@ -8,6 +8,19 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Lesson7WarmUp {
+
+  public static boolean isOdd(int val) {
+    return val % 2 != 0;
+  }
+
+  public static boolean isEven(int val) {
+    return ! isOdd(val);
+  }
+
+
+
+
+
   public static void main(String[] args) {
     List<Integer> origin = Stream
         .generate(() -> (int) (Math.random() * 100))
@@ -16,9 +29,10 @@ public class Lesson7WarmUp {
 
     Comparator<Integer> super_comparator =
         (i1, i2) -> {
-          if (i1 < i2) return -1;
-          else if (i2 < i1) return 1;
-          return 0;
+          if (isEven(i1) && isOdd(i2)) return 1;
+          else if (isEven(i1) && isEven(i2)) return i2-i1;
+          else if (isOdd(i1) && isOdd(i2)) return i1-i2;
+          else return -1;
     };
 
     Collections.sort(sorted, super_comparator);
