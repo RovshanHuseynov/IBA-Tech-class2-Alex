@@ -3,9 +3,9 @@ Task:
 1. Fill the ArrayList of length 30 with random numbers from the range 0..100
 
 2. sort them in following way:
-  - odd - in ascending order
   - even - in descending order
-  - odd first, even - second
+  - odd - in ascending order
+  - even first, odd - second
 
 3. Print the initial array and sorted one.
 
