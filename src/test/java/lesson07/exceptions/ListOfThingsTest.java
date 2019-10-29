@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 
 public class ListOfThingsTest {
 
-  private ListOfThings c;
+  private Calculable c;
 
   @Before
   public void before() {
