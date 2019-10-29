@@ -1,4 +1,9 @@
 you are given the string
+the task is convert all numbers to int
+and calculate the total sum.
+every non-number should be skipped
+
 "1 2 -3 abc" ...... -> 0
 "1 -3 abc" ........ -> -2
 "1 2 3" ........... -> 6
+"10 2 3" .......... -> 15
