@@ -22,10 +22,16 @@ public class StreamsIntro {
     List<String> collected = list.stream()
         .filter(item -> item > 2) // 3,5
         .map(element -> element * 2) // "aa6bb","aa10bb"
+        .map(item -> String.format("aa%dbb", item))
         .collect(Collectors.toList());
 
     collected.forEach(item -> System.out.println(item));
 
-
+    String joined = list.stream()
+        .filter(item -> item > 2) // 3,5
+        .map(element -> element * 2) // "aa6bb","aa10bb"
+        .map(item -> String.format("aa%dbb", item))
+        .collect(Collectors.joining("-", "<<", ">>"));
+    System.out.println(joined);
   }
 }
