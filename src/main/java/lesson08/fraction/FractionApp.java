@@ -1,5 +1,7 @@
 package lesson08.fraction;
 
+import java.util.function.Function;
+
 public class FractionApp {
   public static void main(String[] args) {
     Console console = new Console();
