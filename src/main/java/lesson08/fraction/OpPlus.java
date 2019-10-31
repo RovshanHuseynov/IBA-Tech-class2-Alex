@@ -10,11 +10,4 @@ public class OpPlus implements Operation {
     return new Fraction(num1*den2 + num2*den1, den1*den2);
   }
 
-  public static void main(String[] args) {
-    Fraction plus = new OpPlus().apply(
-        Fraction.from("1/2"),
-        Fraction.from("1/4")
-    );
-    System.out.println(plus);
-  }
 }
