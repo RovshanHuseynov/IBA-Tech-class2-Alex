@@ -3,7 +3,7 @@ The Task:
 1. create an array of random numbers in the range [0..100]
    length = 30
 2. find the minimal sum of two array items located consequently
-   adjacently, ... pair, (data[i] and data[i+1])
+   adjacently, contiguously, pair, (data[i] and data[i+1])
 
 3. print the index of that minimal pair (index of the left element)
 4. print left number and right number
