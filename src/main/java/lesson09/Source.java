@@ -24,7 +24,7 @@ public class Source {
 
   public static int random_from_range(int min, int max) {
     int range = max - min + 1;
-    return (int)(Math.random() * range + 1);
+    return (int)(Math.random() * range + 1 + min);
   }
 
   public static List<Integer> random_int_from_range(int min, int max, int length) {
@@ -50,7 +50,7 @@ public class Source {
         .limit(length)
         .map(String::valueOf)
         .reduce(String::concat)
-        .orElse("");
+        .orElse("-");
   }
 
   public static String random_length(int min, int max) {
