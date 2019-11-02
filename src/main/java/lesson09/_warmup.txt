@@ -2,9 +2,9 @@ The Task:
 
 1. create an array of random numbers in the range [0..100]
    length = 30
-2. find the minimal pair in the array
+2. find the minimal sum of two array items located consequently
 
-3. print the index of that minimal pair
+3. print the index of that minimal pair (index of the left element)
 4. print left number and right number
 5. print the original array
 6. print the sum of that found pair
