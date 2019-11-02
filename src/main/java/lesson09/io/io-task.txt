@@ -1,0 +1,9 @@
+1. create an ArrayList<String>,
+   chars from the range: [A..Z],
+   length of each string from the range: [20..30]
+   length of ArrayList: 33
+2. write it to file
+
+3. read file
+4. sort these strings in order of line length
+5. write sorted strings to another file
