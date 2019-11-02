@@ -1,0 +1,11 @@
+The Task:
+
+1. create an array of random numbers in the range [0..100]
+   length = 30
+2. find the minimal pair in the array
+
+3. print the index of that minimal pair
+4. print left number and right number
+5. print the original array
+6. print the sum of that found pair
+
