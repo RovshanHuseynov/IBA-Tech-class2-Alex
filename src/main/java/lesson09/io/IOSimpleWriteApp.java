@@ -12,6 +12,7 @@ public class IOSimpleWriteApp {
             new File("data/_1234567890.txt")));
     // -------------
     bw.write("Hello! I found it");
+    bw.newLine();
     // -------------
     bw.close();
   }
