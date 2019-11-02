@@ -4,10 +4,6 @@ final public class PairM {
   private final int idx;
   private final int sum;
 
-  public static PairM empty() {
-    return new PairM(-1, Integer.MAX_VALUE);
-  }
-
   public PairM(int idx, int sum) {
     this.idx = idx;
     this.sum = sum;

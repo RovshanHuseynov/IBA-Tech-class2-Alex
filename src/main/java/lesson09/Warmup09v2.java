@@ -11,7 +11,7 @@ public class Warmup09v2 {
     PairM pair = IntStream.range(0, data.size() - 1)
         .mapToObj(idx -> new PairM(idx, data.get(idx) + data.get(idx + 1)))
         .min((p1, p2) -> p1.getSum() - p2.getSum())
-        .orElse(PairM.empty());
+        .orElseThrow(() -> new IllegalArgumentException("the stream must contain at least 1 element"));
 
     System.out.printf("Array: %s\n", data);
     System.out.printf("Left index: %d\n", pair.getIdx());
