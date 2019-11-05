@@ -21,6 +21,9 @@ public class Application {
     pzs.put(pz2);
     Pizza pizza1 = pzs.get(112);
     Pizza pizza2 = pzs.get(113);
+    DeepRabbitHole deepRabbitHole = new DeepRabbitHole();
+    deepRabbitHole.process(() -> p1);
+    deepRabbitHole.process(() -> pps.get(1));
 
   }
 }
