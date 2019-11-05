@@ -3,11 +3,11 @@ package lesson10.dao;
 public class Application {
   public static void main(String[] args) {
 
-    DAO<Person> pps = null;
-//        new DAOPersonHashMap();
+    DAO<Person> pps =
+        new DAOPersonHashMap();
 //        new DAOPersonSQL();
-    DAO<Pizza> pzs = null;
-//        new DAOPizzaHashMap();
+    DAO<Pizza> pzs =
+        new DAOPizzaHashMap();
 //        new DAOPizzaSQL();
 
     Person p1 = new Person(1, "Alex", 33);

@@ -1,6 +1,12 @@
 package lesson10.dao;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class DAOPersonHashMap implements DAO<Person> {
+
+  private Map<Integer, Person> storage = new HashMap<>();
 
   @Override
   public void put(Person object) {
@@ -15,5 +21,10 @@ public class DAOPersonHashMap implements DAO<Person> {
   @Override
   public void delete(int id) {
     throw new IllegalArgumentException("DAOPersonHashMap:delete:not yet");
+  }
+
+  @Override
+  public List<Person> getAll() {
+    throw new IllegalArgumentException("DAOPersonHashMap:getAll:not yet");
   }
 }

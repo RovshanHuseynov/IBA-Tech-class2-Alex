@@ -1,5 +1,7 @@
 package lesson10.dao;
 
+import java.util.List;
+
 public class DAOPizzaSQL implements DAO<Pizza> {
 
   @Override
@@ -15,5 +17,10 @@ public class DAOPizzaSQL implements DAO<Pizza> {
   @Override
   public void delete(int id) {
     throw new IllegalArgumentException("DAOPizzaSQL:delete:not yet");
+  }
+
+  @Override
+  public List<Pizza> getAll() {
+    throw new IllegalArgumentException("DAOPizzaSQL:getAll:not yet");
   }
 }

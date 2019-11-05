@@ -1,6 +1,7 @@
 package lesson10.dao;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class DAOPizzaHashMap implements DAO<Pizza> {
@@ -20,5 +21,10 @@ public class DAOPizzaHashMap implements DAO<Pizza> {
   @Override
   public void delete(int id) {
     throw new IllegalArgumentException("DAOPizzaHashMap:delete:not yet");
+  }
+
+  @Override
+  public List<Pizza> getAll() {
+    throw new IllegalArgumentException("DAOPizzaHashMap:getAll:not yet");
   }
 }
