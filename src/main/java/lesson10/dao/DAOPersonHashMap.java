@@ -14,7 +14,7 @@ public class DAOPersonHashMap implements DAO<Person> {
 
   @Override
   public void put(Person object) {
-    throw new IllegalArgumentException("DAOPersonHashMap:put:not yet");
+    storage.put(object.getId(), object);
   }
 
   @Override
