@@ -1,7 +1,8 @@
 package lesson10;
 
-public class Brackets {
+public class Brackets implements Calculable{
 
+  @Override
   public int calc(String origin) {
     int depth = 0;
     int max_depth = 0;

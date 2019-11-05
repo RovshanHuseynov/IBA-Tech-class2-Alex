@@ -7,11 +7,13 @@ import static org.junit.Assert.*;
 
 public class BracketsTest {
 
-  private Brackets app;
+  private Calculable app;
 
   @Before
   public void setUp() {
-    this.app = new Brackets();
+    this.app =
+//        new Brackets2();
+        new Brackets();
   }
 
   @Test
