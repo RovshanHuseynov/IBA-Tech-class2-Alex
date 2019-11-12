@@ -1,7 +1,11 @@
-1. create an array of length = 25 with random integers from the range [10..50]
-2. write a function(method) which will sort the array in ascending order
-   ANY COLLECTIONS AND JAVA METHODS FOR SORTING ARE FORBIDDEN TO USE
-   only for, if, while, etc...
+1. create an array of length = 25 with random integers
+   from the range [10..50]
+2. write a function(method) which will sort the array
+   in ascending order
+   ANY COLLECTIONS AND JAVA METHODS FOR SORTING
+   ARE FORBIDDEN TO USE
+   allowed only: int[], for, if, while, etc...
+   don't invent the bicycle, reuse
 3. print source array and sorted array
 3. explain the complexity in a way you understand
 4. can you improve your solution?

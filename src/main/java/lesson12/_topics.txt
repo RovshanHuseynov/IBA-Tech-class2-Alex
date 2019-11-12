@@ -4,6 +4,7 @@ hard skills:
 - complexity, bigO notation
 - O(1), O(N), O(logN), O(N^2), O(NlogN)
 - sort: bubble sort, merge sort, quick sort
+- resources
 
 - bytes, bits
 - AND, OR, XOR, NOT
