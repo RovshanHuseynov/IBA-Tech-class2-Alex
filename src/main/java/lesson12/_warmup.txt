@@ -5,7 +5,8 @@
    ANY COLLECTIONS AND JAVA METHODS FOR SORTING
    ARE FORBIDDEN TO USE (NO ANY IMPORTS)
    allowed only: int[], =, for, if, while, print
-   don't invent the bicycle, reuse
+   * don't invent the bicycle, reuse random generator
+     from previous tasks
 3. print source array and sorted array
 3. explain the complexity in a way you understand
 4. can you improve your solution?
