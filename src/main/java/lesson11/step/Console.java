@@ -1,4 +1,4 @@
-package lesson12.step;
+package lesson11.step;
 
 public interface Console {
   void printLn(String s);

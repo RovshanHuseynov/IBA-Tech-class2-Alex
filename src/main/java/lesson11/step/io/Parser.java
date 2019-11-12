@@ -1,4 +1,4 @@
-package lesson12.step.io;
+package lesson11.step.io;
 
 public class Parser {
   public Command parse(String origin) {

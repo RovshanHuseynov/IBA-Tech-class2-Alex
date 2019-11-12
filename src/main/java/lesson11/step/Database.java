@@ -1,6 +1,6 @@
-package lesson12.step;
+package lesson11.step;
 
-import lesson12.step.entity.TimeTable;
+import lesson11.step.entity.TimeTable;
 
 public class Database {
 

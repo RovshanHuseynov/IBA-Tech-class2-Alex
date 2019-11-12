@@ -1,4 +1,4 @@
-package lesson12.step.controller;
+package lesson11.step.controller;
 
 public class TimetableController {
   public void show() {

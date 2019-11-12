@@ -1,6 +1,6 @@
-package lesson12.step.controller;
+package lesson11.step.controller;
 
-import lesson12.step.service.MainService;
+import lesson11.step.service.MainService;
 
 public class MainController {
   private final MainService mainService;

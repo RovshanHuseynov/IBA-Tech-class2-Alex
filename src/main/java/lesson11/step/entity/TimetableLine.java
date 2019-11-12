@@ -1,4 +1,4 @@
-package lesson12.step.entity;
+package lesson11.step.entity;
 
 public class TimetableLine {
   private final City src;

@@ -1,6 +1,6 @@
-package lesson12.step.service;
+package lesson11.step.service;
 
-import lesson12.step.Menu;
+import lesson11.step.Menu;
 
 public class MainService {
   public String menuContent() {

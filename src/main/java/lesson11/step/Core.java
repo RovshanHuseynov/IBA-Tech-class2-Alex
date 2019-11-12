@@ -1,10 +1,10 @@
-package lesson12.step;
+package lesson11.step;
 
-import lesson12.step.controller.BookingController;
-import lesson12.step.controller.MainController;
-import lesson12.step.controller.TimetableController;
-import lesson12.step.io.Command;
-import lesson12.step.io.Parser;
+import lesson11.step.controller.BookingController;
+import lesson11.step.controller.MainController;
+import lesson11.step.controller.TimetableController;
+import lesson11.step.io.Command;
+import lesson11.step.io.Parser;
 
 public class Core {
 

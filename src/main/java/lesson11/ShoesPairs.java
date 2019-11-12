@@ -1,4 +1,4 @@
-package lesson12;
+package lesson11;
 
 public class ShoesPairs {
   int calc(String origin) {

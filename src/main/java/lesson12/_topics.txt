@@ -1,0 +1,18 @@
+hard skills:
+------------
+- algorithm basic
+- complexity, bigO notation
+- O(1), O(N), O(logN), O(N^2), O(NlogN)
+- sort: bubble sort, merge sort, quick sort
+
+- bytes, bits
+- AND, OR, XOR, NOT
+- XOR ideas
+- shift, semantics of shift operations << >>
+- overflow problem
+
+tasks
+-----
+DecimalToBinary
+BinaryToDecimal
+Overflow solution ideas

@@ -6,7 +6,7 @@ They now need to be matched into pairs and packed into boxes. Ellen would like t
 subordinate workers. Each worker should get a distinct interval of adjacent shoes, such that the number
 of left shoes is equal to the number of right shoes. Each shoe must be assigned to exactly one worker.
 What is the maximum number of workers that Ellen can assign to this task?
-(dfg)fg(gh)(ghf)j(j.hj)(f+g)df(ds(sd(dsf)dsfsdf,drgftg))
+
 Write a function:
 class Solution { public int solution(String S); } that, given a string S of letters "L" and "R",
 denoting the types of shoes in line (left or right), returns the maximum number of intervals such

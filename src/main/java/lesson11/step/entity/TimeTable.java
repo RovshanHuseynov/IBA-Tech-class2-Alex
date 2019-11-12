@@ -1,4 +1,4 @@
-package lesson12.step.entity;
+package lesson11.step.entity;
 
 import java.util.ArrayList;
 import java.util.List;
