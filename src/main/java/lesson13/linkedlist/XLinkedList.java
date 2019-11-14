@@ -1,5 +1,7 @@
 package lesson13.linkedlist;
 
+import java.util.StringJoiner;
+
 public class XLinkedList {
 
   class XItem {
@@ -66,8 +68,10 @@ public class XLinkedList {
 
   @Override
   public String toString() {
-    String s ="";
-    // ...
-    return s;
+    StringJoiner sj = new StringJoiner(",","[","]");
+    for (XItem current = head; current != null; current = current.next) {
+      sj.add(String.valueOf(current.value));
+    }
+    return sj.toString();
   }
 }
