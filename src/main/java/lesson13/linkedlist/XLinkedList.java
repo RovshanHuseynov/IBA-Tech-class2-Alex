@@ -13,13 +13,13 @@ public class XLinkedList {
     return lengthr(head);
   }
 
-  private int lengthr2(XItem current) {
-    if (current == null) return 0;
-    return lengthr2(current.next);
+  private int lengthr2(XItem current, int len) {
+    if (current == null) return len;
+    return lengthr2(current.next, 1 + len);
   }
 
   public int lengthr2() {
-    return lengthr(head);
+    return lengthr2(head, 0);
   }
 
   public int length() {
