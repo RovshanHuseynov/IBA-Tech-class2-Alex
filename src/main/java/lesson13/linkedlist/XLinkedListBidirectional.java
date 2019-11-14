@@ -1,4 +1,4 @@
-package lesson13.recursion.and.linked.list;
+package lesson13.linkedlist;
 
 import java.util.StringJoiner;
 
