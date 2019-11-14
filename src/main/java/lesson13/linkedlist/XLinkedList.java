@@ -4,6 +4,18 @@ import java.util.StringJoiner;
 
 public class XLinkedList {
 
+  public int length() {
+    int l = 0;
+    for (XItem current = head; current != null; current = current.next) {
+      l+=1;
+    }
+    return l;
+  }
+
+  public void revert() {
+
+  }
+
   class XItem {
     int value;
     XItem next;
@@ -64,7 +76,6 @@ public class XLinkedList {
       curr = curr.next;
     }
   }
-
 
   @Override
   public String toString() {
