@@ -30,8 +30,17 @@ public class XLinkedList {
     return l;
   }
 
-  public void revert() {
+  public void revert_while() {
+    throw new IllegalArgumentException("Should be implemented at Home!");
+  }
 
+  private void revert(XItem curr) {
+    throw new IllegalArgumentException("Should be implemented at Home!");
+  }
+
+  public void revert_recursive() {
+    // revert(head);
+    throw new IllegalArgumentException("Should be implemented at Home!");
   }
 
   class XItem {
