@@ -1,7 +1,5 @@
 package lesson13.linkedlist;
 
-import java.util.StringJoiner;
-
 public class XLinkedList {
 
     class XItem {
