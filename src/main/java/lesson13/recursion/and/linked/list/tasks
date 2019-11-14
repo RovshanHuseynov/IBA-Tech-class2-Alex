@@ -1,0 +1,16 @@
+1. Implement your own Linked List with methods
+- void add(elem) //in the end of list
+- int get(int index)
+- remove(elem)
+- size()
+
+2. Modify your Linked List to make it bidirectional
+-> next
+<- prev
+
+
+Advanced
+4. Modify your Linked List to use it as a Queue (FIFO - First In First Out)
+
+
+5. Modify your Linked List to use it as a Stack (LIFO - Last In First Out)
