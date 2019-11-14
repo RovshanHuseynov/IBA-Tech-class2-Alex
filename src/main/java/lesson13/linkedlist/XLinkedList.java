@@ -4,6 +4,24 @@ import java.util.StringJoiner;
 
 public class XLinkedList {
 
+  private int lengthr(XItem current) {
+    if (current == null) return 0;
+    return 1 + lengthr(current.next);
+  }
+
+  public int lengthr() {
+    return lengthr(head);
+  }
+
+  private int lengthr2(XItem current) {
+    if (current == null) return 0;
+    return lengthr2(current.next);
+  }
+
+  public int lengthr2() {
+    return lengthr(head);
+  }
+
   public int length() {
     int l = 0;
     for (XItem current = head; current != null; current = current.next) {

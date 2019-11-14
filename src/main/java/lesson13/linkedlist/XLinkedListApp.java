@@ -13,5 +13,8 @@ public class XLinkedListApp {
     System.out.println(xl); // [11,22,33,44]
     xl.revert();
     System.out.println(xl); // [44,33,22,11]
+    System.out.println(xl.length());   // 4
+    System.out.println(xl.lengthr());  // 4
+    System.out.println(xl.lengthr2()); // 4
   }
 }
