@@ -8,8 +8,8 @@ public class XLinkedListApp {
     xl.add(33);
     xl.add(44);
 
-    // xl.contains(11); // true
-    // xl.contains(12); // false
+    boolean b11 = xl.contains(11); // true
+    boolean b12 = xl.contains(12); // false
 
     System.out.println(xl);
   }
