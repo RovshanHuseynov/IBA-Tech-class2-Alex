@@ -63,4 +63,11 @@ public class XLinkedList {
     }
   }
 
+
+  @Override
+  public String toString() {
+    String s ="";
+    // ...
+    return s;
+  }
 }
