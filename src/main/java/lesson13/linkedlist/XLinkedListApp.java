@@ -10,7 +10,9 @@ public class XLinkedListApp {
 
     boolean b11 = xl.contains(11); // true
     boolean b12 = xl.contains(12); // false
+    System.out.println(b11);
+    System.out.println(b12);
 
-    System.out.println(xl);
+    System.out.println(xl); // [11, 22, 33, 44]
   }
 }

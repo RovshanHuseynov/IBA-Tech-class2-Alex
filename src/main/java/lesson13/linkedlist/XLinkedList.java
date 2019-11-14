@@ -18,8 +18,19 @@ public class XLinkedList {
   }
 
   public boolean contains(int value) {
+    XItem current = head;
+    while (current != null) {
+      if (current.value == value) return true;
+      current = current.next;
+    }
+    return false;
+  }
 
-    throw new RuntimeException("Not implemented yet");
+  public boolean contains_for(int value) {
+    for (XItem current = head; current != null; current = current.next) {
+      if (current.value == value) return true;
+    }
+    return false;
   }
 
   public void add(int value) {
