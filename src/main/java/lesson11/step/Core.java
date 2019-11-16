@@ -38,7 +38,7 @@ public class Core {
       Command user_input = parser.parse(line);
       switch (user_input) {
         case TIMETABLE_SHOW:
-          timetableController.show();
+          timetableController.show(console);
           break;
         case BOOKING_ADD:
           bookingController.add();
