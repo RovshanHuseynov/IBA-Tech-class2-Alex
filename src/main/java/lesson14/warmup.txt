@@ -1,0 +1,13 @@
+1. Sort an array of integers arr[] using 2 different
+sorting algorithms (your choice)
+array should be generated
+
+2. get rid of vowels in the given string
+   signature: String filter(String origin)
+Example "Baku" -> "Bk"
+vowels = "A, O, U ..."
+
+3. change the case to vice versa in a given string of characters
+   (a->A, b->B...). IF-ELSE, SWITCH-CASE
+   and TERNARY (*?*:*) is FORBIDDEN!
+   signature: String convert(String origin) abCD -> ABcd
