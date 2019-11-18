@@ -1,5 +1,7 @@
 package lesson11.step.entity;
 
+import java.util.Objects;
+
 public class City {
   private final int id;
   private final String name;
@@ -19,9 +21,7 @@ public class City {
 
   @Override
   public String toString() {
-    return "City{" +
-        "name='" + name + '\'' +
-        '}';
+    return String.format("City{id:%d,name:'%s'}", id, name);
   }
 
   @Override
@@ -32,7 +32,7 @@ public class City {
     City city = (City) o;
 
     if (id != city.id) return false;
-    return name != null ? name.equals(city.name) : city.name == null;
+    return Objects.equals(name, city.name);
   }
 
   @Override

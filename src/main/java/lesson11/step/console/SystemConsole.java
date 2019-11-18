@@ -1,4 +1,4 @@
-package lesson11.step;
+package lesson11.step.console;
 
 import java.io.PrintStream;
 import java.util.Scanner;

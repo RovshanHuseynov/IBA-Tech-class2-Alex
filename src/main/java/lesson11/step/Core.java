@@ -1,5 +1,6 @@
 package lesson11.step;
 
+import lesson11.step.console.Console;
 import lesson11.step.controller.BookingController;
 import lesson11.step.controller.MainController;
 import lesson11.step.controller.TimetableController;
@@ -21,18 +22,15 @@ public class Core {
     this.database = database;
     this.menu = new Menu();
     this.parser = new Parser();
-    this.timetableController = new TimetableController();
-    this.bookingController = new BookingController();
-    this.mainController = new MainController();
+    this.timetableController = new TimetableController(console);
+    this.bookingController = new BookingController(console);
+    this.mainController = new MainController(console);
   }
 
   public void run() {
-    if (!database.isExisted()) {
-      database.createInitialData();
-    }
-    boolean cont = true;
+    boolean exit = false;
     console.printLn(menu.show());
-    while (cont) {
+    while (!exit) {
 
       String line = console.readLn();
       Command user_input = parser.parse(line);
@@ -50,7 +48,7 @@ public class Core {
           bookingController.show();
           break;
         case EXIT:
-          cont = false;
+          exit = true;
           break;
         case HELP:
         default:

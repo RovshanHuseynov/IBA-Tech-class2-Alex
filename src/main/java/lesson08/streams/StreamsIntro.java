@@ -20,7 +20,12 @@ public class StreamsIntro {
 //    });
 
     List<String> collected = list.stream()
-        .filter(item -> item > 2) // 3,5
+        .filter(new Predicate<Integer>() {
+          @Override
+          public boolean test(Integer item) {
+            return item > 2;
+          }
+        }) // 3,5
         .map(element -> element * 2) // "aa6bb","aa10bb"
         .map(item -> String.format("aa%dbb", item))
         .collect(Collectors.toList());
