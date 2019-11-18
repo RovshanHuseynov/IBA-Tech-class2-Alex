@@ -3,7 +3,7 @@ package lesson02.warmup;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
-public class RandomMirror {
+public class ThreeFilters {
 
   public static int[] filter_negatives(int[] origin) {
     int[] result = new int[origin.length];
@@ -53,12 +53,5 @@ public class RandomMirror {
     int[] negatives = filter_negatives(data);
     int[] odd = filter_odd(data);
     int[] even = filter_even(data);
-
-
-
-
-
-
-
   }
 }

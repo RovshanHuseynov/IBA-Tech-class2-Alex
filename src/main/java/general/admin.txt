@@ -1,5 +1,6 @@
-Morning Classes 8:30 - 14:30
-Evening Classes 16:00 - 22:00
+Morning Classes Mon-Fri  = 8:30 - 14:30
+Morning Classes Saturday = 9:30 - 15:30
+Evening Classes Mon-Fri  = 16:00 - 22:00
 
 10 min break every hour
 20 min break every 2 hours

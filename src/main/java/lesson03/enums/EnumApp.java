@@ -19,8 +19,6 @@ public class EnumApp {
     Day mon = Day.Monday;
     Day sat = Day.Saturday;
 
-    EnumApp enumApp = new EnumApp();
-//    enumApp.day
 
 
   }

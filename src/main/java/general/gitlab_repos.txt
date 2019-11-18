@@ -9,3 +9,13 @@ Homework:
 https://gitlab.com/dan-it/az-groups/az-be2
 -> https://gitlab.com/dan-it/az-groups/az-be2.git
 git@gitlab.com:dan-it/az-groups/az-be2.git (ssh key uploading required)
+
+alexr repos:
+============
+https://github.com/alexr007/ultimate8.git
+https://github.com/alexr007/java-io.git
+https://github.com/alexr007/algorithms.git
+https://github.com/alexr007/java-web.git
+https://github.com/alexr007/snake-clean.git
+
+P.S. Put stars, follow me, and feel free to fork and do experiments by yourself ! :)
