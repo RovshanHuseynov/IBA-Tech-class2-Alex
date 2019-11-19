@@ -15,19 +15,19 @@ public class Merge {
   }
 
   public XLinkedList.XItem merge(XLinkedList.XItem head1, XLinkedList.XItem head2) {
-    XLinkedList.XItem head = null;
+    XLinkedList.XItem head;
     XLinkedList.XItem current1 = head1;
     XLinkedList.XItem current2 = head2;
-    XLinkedList.XItem current = head;
+    XLinkedList.XItem current;
     // 1. we dont have an indices, so we have to assign the new head
     // no way. if-statement
     if (current1.value < current2.value) {
       head = current1;
-      current = head;
+      current = current1;
       current1 = current1.next;
     } else {
       head = current2;
-      current = head;
+      current = current2;
       current2 = current2.next;
     }
     // 2. rewire all the elements until both of the lists contain elements
