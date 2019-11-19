@@ -18,6 +18,8 @@ public class Merge {
     XLinkedList.XItem head = null;
     XLinkedList.XItem current1 = head1;
     XLinkedList.XItem current2 = head2;
+    XLinkedList.XItem current = head;
+
 
     return head;
   }
