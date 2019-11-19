@@ -1,4 +1,4 @@
-package lesson15;
+package lesson15.palindrome;
 
 public class IsPalindrome {
   public boolean check(int number) {

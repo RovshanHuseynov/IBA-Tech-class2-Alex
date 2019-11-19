@@ -1,4 +1,4 @@
-package lesson15;
+package lesson15.prime;
 
 import java.util.Arrays;
 

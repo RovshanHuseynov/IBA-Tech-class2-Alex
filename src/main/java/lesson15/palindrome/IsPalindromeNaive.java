@@ -1,4 +1,4 @@
-package lesson15;
+package lesson15.palindrome;
 
 public class IsPalindromeNaive {
   boolean check(int val) {
