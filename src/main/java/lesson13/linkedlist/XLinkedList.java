@@ -51,7 +51,7 @@ public class XLinkedList {
     throw new IllegalArgumentException("Should be implemented at Home!");
   }
 
-  class XItem {
+  public static class XItem {
     int value;
     XItem next;
 
