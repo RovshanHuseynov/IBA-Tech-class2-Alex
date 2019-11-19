@@ -31,7 +31,15 @@ public class XLinkedList {
   }
 
   public void revert_while() {
-    throw new IllegalArgumentException("Should be implemented at Home!");
+    XItem current = head;
+    XItem prev = null;
+    while (current !=null) {
+      XItem savedNext = current.next;
+      current.next = prev;
+      prev = current;
+      current = savedNext;
+    }
+    head = prev;
   }
 
   private void revert(XItem curr) {
