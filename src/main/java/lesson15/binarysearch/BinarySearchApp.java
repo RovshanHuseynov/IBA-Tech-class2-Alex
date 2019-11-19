@@ -17,6 +17,7 @@ public class BinarySearchApp {
     BinarySearch binary = new BinarySearch();
     int numberToFind = (int)(Math.random()*1000);
     boolean found = binary.search(origin, numberToFind);
+    System.out.printf("Data is: %s\n", Arrays.toString(origin));
     System.out.printf("Number %d %s\n", numberToFind, found ? "is found" : "not found");
   }
 }
