@@ -20,8 +20,6 @@ public class MergeApp {
     System.out.printf("XL2:%s\n", xl2);
     Merge app = new Merge();
     XLinkedList.XItem merged = app.merge(xl1.getHead(), xl2.getHead());
-    app.print(merged);
-
-
+    System.out.printf("Merged: %s\n", app.toString(merged));
   }
 }

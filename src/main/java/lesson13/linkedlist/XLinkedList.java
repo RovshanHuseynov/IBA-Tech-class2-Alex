@@ -52,8 +52,8 @@ public class XLinkedList {
   }
 
   public static class XItem {
-    int value;
-    XItem next;
+    public int value;
+    public XItem next;
 
     public XItem(int value) {
       this.value = value;
