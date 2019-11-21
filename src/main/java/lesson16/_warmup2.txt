@@ -1,0 +1,2 @@
+2. revert linked list without 'while'
+but with recursion approach
