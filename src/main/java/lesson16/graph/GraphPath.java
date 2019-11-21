@@ -11,6 +11,14 @@ public class GraphPath {
   }
 
   List<Integer> path(int from, int to) {
+    boolean[] visited = new boolean[g.getVertices()];
+    if (!visited[from]) {
+      visited[from] = true;
+      // ...
+      // ...
+    }
+    // ...
+    // ...
     ArrayList<Integer> path = new ArrayList<>();
     return path;
   }
