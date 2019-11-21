@@ -1,5 +1,6 @@
 package lesson16.graph;
 
+import java.util.Collection;
 import java.util.List;
 
 public class XGraphApp {
@@ -28,8 +29,10 @@ public class XGraphApp {
     System.out.println(b2);
 
     g.add(3,9);
-
     g.add(8,9);
+
+    Collection<Integer> waysFrom3 = g.get(3); // [4, 5, 6, 7, 9]
+    System.out.println(waysFrom3);
 
     GraphPath gp = new GraphPath(g);
     List<Integer> path = gp.path(0, 6);

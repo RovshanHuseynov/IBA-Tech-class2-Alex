@@ -1,7 +1,7 @@
 package lesson16.graph;
 
+import java.util.Collection;
 import java.util.LinkedList;
-import java.util.List;
 
 public class XGraph {
 
@@ -26,7 +26,7 @@ public class XGraph {
     return data[src].contains(new Integer(dst));
   }
 
-  public List<Integer> get(int src) {
+  public Collection<Integer> get(int src) {
     return data[src];
   }
 
