@@ -1,0 +1,7 @@
+hard skills:
+------------
+- tree
+- tree traverse
+
+- graph
+- graph traverse
