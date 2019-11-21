@@ -2,6 +2,7 @@ package lesson16;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.function.IntConsumer;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
