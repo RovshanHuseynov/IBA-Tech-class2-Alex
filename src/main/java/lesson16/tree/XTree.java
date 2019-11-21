@@ -31,6 +31,14 @@ public class XTree {
   }
 
   boolean contains(int value) {
+    XNode current = root;
+    while (current != null) {
+      if (value < current.value) {
+        current = current.left;
+      } else if (value > current.value) {
+        current = current.right;
+      } else return true;
+    }
     return false;
   }
 
