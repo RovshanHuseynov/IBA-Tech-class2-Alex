@@ -18,6 +18,11 @@ public class HelloServlet extends HttpServlet {
 //    Calc calc = new Calc();
 //    int c = calc.add(a,b);
 
+    http://localhost/static/image.png
+    http://localhost/static/css/style.css
+    http://localhost/static/images/logo.jpg
+
+
     try (PrintWriter writer = resp.getWriter()) {
       writer.println("<html><body><H1>Hello World</H1>");
 
