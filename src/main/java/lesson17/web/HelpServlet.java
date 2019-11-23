@@ -7,11 +7,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class HelloServlet extends HttpServlet {
+public class HelpServlet extends HttpServlet {
   @Override
   protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     try (PrintWriter writer = resp.getWriter()) {
-      writer.println("<html><body><H1>Hello World</H1></body><html>");
+      writer.println("<html><body><H1>Help Page</H1></body><html>");
     }
   }
 }
