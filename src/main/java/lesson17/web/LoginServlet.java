@@ -11,6 +11,12 @@ import java.nio.file.Paths;
 
 public class LoginServlet extends HttpServlet {
 
+  private final Auth auth;
+
+  public LoginServlet(Auth auth) {
+    this.auth = auth;
+  }
+
   @Override
   protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     Files.copy(Paths.get("./content/login.html"), resp.getOutputStream());
@@ -22,7 +28,6 @@ public class LoginServlet extends HttpServlet {
     String password = req.getParameter("password");
     System.out.printf("name:%s\n",name);
     System.out.printf("paswd:%s\n",password);
-    Auth auth = new AuthHash();
     try (PrintWriter w = resp.getWriter()) {
       if (auth.check(name, password)) {
         w.printf("Auth for user:%s passwd:%s successful", name, password);
