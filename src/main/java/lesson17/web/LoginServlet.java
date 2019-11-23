@@ -22,5 +22,13 @@ public class LoginServlet extends HttpServlet {
     String password = req.getParameter("password");
     System.out.printf("name:%s\n",name);
     System.out.printf("paswd:%s\n",password);
+    Auth auth = new AuthHash();
+    try (PrintWriter w = resp.getWriter()) {
+      if (auth.check(name, password)) {
+        w.printf("Auth for user:%s passwd:%s successful", name, password);
+      } else {
+        w.printf("Auth for user:%s passwd:%s Error", name, password);
+      }
+    }
   }
 }
