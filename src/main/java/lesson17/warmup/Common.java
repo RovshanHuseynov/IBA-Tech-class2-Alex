@@ -8,16 +8,16 @@ public class Common {
     return Arrays.asList(strings);
   }
 
-  public static <K> Map<K, List<K>> map(Map.Entry<K, List<K>>... items) {
+  public static <K> Map<K, List<K>> map(Entry<K, List<K>>... items) {
     HashMap<K, List<K>> m = new HashMap<>();
-    for (Map.Entry<K, List<K>> item: items) {
-      m.put(item.getKey(), item.getValue());
+    for (Entry<K, List<K>> item: items) {
+      m.put(item.getKey(), item.getVal());
     }
     return m;
   }
 
-  public static <K> Map.Entry<K, List<String>> of(K key, List<String> value) {
-    return new AbstractMap.SimpleEntry<>(key, value);
+  public static <T> Entry<T, List<T>> of(T key, List<T> value) {
+    return new Entry<>(key, value);
   }
 
   public static <T> String combine(T... words) {

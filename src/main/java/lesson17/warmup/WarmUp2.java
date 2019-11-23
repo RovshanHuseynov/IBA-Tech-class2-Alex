@@ -2,6 +2,7 @@ package lesson17.warmup;
 
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import static lesson17.warmup.Common.*;
 
@@ -19,6 +20,14 @@ public class WarmUp2 {
         of("meowed at", list("Noel", "the door", "the food cupboard")),
         of("barked at", list("the postman", "the car", "the cat")));
 
+    List<String> sentences =
+        assoc_subj_verb.keySet().stream().flatMap(subj ->
+            assoc_subj_verb.get(subj).stream().flatMap(verb ->
+                    assoc_verb_obj.get(verb).stream().map(obj ->
+                        combine(subj, verb, obj)
+    ))).collect(Collectors.toList());
+
+    sentences.forEach(System.out::println);
 
   }
 }
