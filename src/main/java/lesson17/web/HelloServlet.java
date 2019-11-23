@@ -18,9 +18,9 @@ public class HelloServlet extends HttpServlet {
 //    Calc calc = new Calc();
 //    int c = calc.add(a,b);
 
-    http://localhost/static/image.png
-    http://localhost/static/css/style.css
-    http://localhost/static/images/logo.jpg
+//    http://localhost:9001/static/image.png
+//    http://localhost:9001/static/css/style.css
+//    http://localhost:9001/static/images/logo.jpg
 
 
     try (PrintWriter writer = resp.getWriter()) {
