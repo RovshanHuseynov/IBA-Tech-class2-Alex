@@ -6,12 +6,21 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class LoginServlet extends HttpServlet {
+
   @Override
   protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-    try (PrintWriter writer = resp.getWriter()) {
-      writer.println("<html><body><H1>Login Page</H1></body><html>");
-    }
+    Files.copy(Paths.get("./content/login.html"), resp.getOutputStream());
+  }
+
+  @Override
+  protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    String name = req.getParameter("name");
+    String password = req.getParameter("password");
+    System.out.printf("name:%s\n",name);
+    System.out.printf("paswd:%s\n",password);
   }
 }
