@@ -10,6 +10,7 @@ public class TheSimplestServer {
     handler.addServlet(HelloServlet.class, "/hello/*");
     handler.addServlet(LoginServlet.class, "/login/*");
     handler.addServlet(HelpServlet.class, "/help/*");
+    handler.addServlet(Servlet404.class, "/*");
     server.setHandler(handler);
     server.start();
     server.join();
