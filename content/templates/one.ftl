@@ -15,5 +15,10 @@ ${dog.age}
 ${dog.name}
 <br>
 ${dog.sound()}
+<table border="1">
+    <#list randoms as random>
+    <tr><td>${random}</td></tr>
+    </#list>
+</table>
 </body>
 </html>

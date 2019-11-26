@@ -6,6 +6,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.util.HashMap;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class FreemarkerServlet extends HttpServlet {
 
@@ -19,11 +22,15 @@ public class FreemarkerServlet extends HttpServlet {
   protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     String jim = "Jim";
     Dog jack = new Dog(33, "Jack");
-
+    List<Integer> ints = Stream
+        .generate(() -> (int)(Math.random() * 10))
+        .limit(7) // size
+        .collect(Collectors.toList());
 
     HashMap<String, Object> data = new HashMap<>();
     data.put("name", jim);
     data.put("dog", jack);
+    data.put("randoms", ints);
     engine.render("one.ftl", data, resp);
   }
 }
