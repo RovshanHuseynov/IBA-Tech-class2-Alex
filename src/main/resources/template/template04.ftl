@@ -8,12 +8,12 @@
     <title>Document</title>
 </head>
 <body>
-<form method="post">
-    Hello, $user
-    <input type="text" name="name">
-    <input type="text" name="password">
-    <input type="submit">
-    you've got a new messages($count)
-</form>
+    <h1>TemplateApp04</h1>
+    <h4>template file location: project resources folder/content/templates/template04.ftl</h4>
+    <table border="1">
+        <#list randoms as random>
+            <tr><td>${random}</td></tr>
+        </#list>
+    </table>
 </body>
 </html>

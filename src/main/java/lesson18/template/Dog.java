@@ -1,4 +1,4 @@
-package lesson18;
+package lesson18.template;
 
 public class Dog {
   private final int age;

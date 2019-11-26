@@ -1,36 +1,32 @@
-package lesson18;
+package lesson18.template;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.*;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class FreemarkerServlet extends HttpServlet {
+public class FreemarkerServlet04 extends HttpServlet {
 
   private TemplateEngine engine;
 
-  public FreemarkerServlet(TemplateEngine engine) {
+  public FreemarkerServlet04(TemplateEngine engine) {
     this.engine = engine;
   }
 
   @Override
-  protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-    String jim = "Jim";
-    Dog jack = new Dog(33, "Jack");
+  protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
     List<Integer> ints = Stream
         .generate(() -> (int)(Math.random() * 10))
-        .limit(7) // size
+        .limit(7)
         .collect(Collectors.toList());
 
     HashMap<String, Object> data = new HashMap<>();
-    data.put("name", jim);
-    data.put("dog", jack);
     data.put("randoms", ints);
-    engine.render("one.ftl", data, resp);
+
+    engine.render("template04.ftl", data, resp);
   }
 }

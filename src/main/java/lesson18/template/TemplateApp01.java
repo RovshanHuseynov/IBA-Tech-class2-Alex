@@ -1,16 +1,16 @@
-package lesson18;
+package lesson18.template;
 
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
-import org.eclipse.jetty.servlet.ServletHolder;
 
-public class Application {
+/**
+ * servlet location:
+ * http://localhost:9001/ph
+ */
+public class TemplateApp01 {
   public static void main(String[] args) throws Exception {
-    TemplateEngine engine = new TemplateEngine("./content/templates");
-
     ServletContextHandler handler = new ServletContextHandler();
     handler.addServlet(PlaceHolderServlet.class, "/ph/*");
-    handler.addServlet(new ServletHolder(new FreemarkerServlet(engine)), "/fm/*");
 
     Server server = new Server(9001);
     server.setHandler(handler);

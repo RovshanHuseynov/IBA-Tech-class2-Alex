@@ -1,4 +1,4 @@
-package lesson18;
+package lesson18.template;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -12,7 +12,7 @@ public class PlaceHolderServlet extends HttpServlet {
   protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     String name = "Jim";
     int number = 43;
-    BufferedReader br = new BufferedReader(new FileReader(new File("./content/placeholder_task.html")));
+    BufferedReader br = new BufferedReader(new FileReader(new File("./content/template/template.html")));
     try(PrintWriter w = resp.getWriter()) {
       br.lines().forEach(s -> {
         s = s.replaceAll("\\$user", name);
