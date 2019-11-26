@@ -4,15 +4,19 @@ import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 
+import javax.servlet.http.HttpServlet;
+
 public class Application {
   public static void main(String[] args) throws Exception {
-    Server server = new Server(9001);
-    ServletContextHandler handler = new ServletContextHandler();
     DataContainer data = new DataContainer();
+    HttpServlet hs = new HelloServlet(data);
+    HttpServlet bs = new ByeServlet(data);
 
-    handler.addServlet(new ServletHolder(new HelloServlet(data)), "/hello/*");
-    handler.addServlet(new ServletHolder(new ByeServlet(data)), "/bye/*");
+    ServletContextHandler handler = new ServletContextHandler();
+    handler.addServlet(new ServletHolder(hs), "/hello/*");
+    handler.addServlet(new ServletHolder(bs), "/bye/*");
 
+    Server server = new Server(9001);
     server.setHandler(handler);
     server.start();
     server.join();
