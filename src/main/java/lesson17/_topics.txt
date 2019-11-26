@@ -1,0 +1,8 @@
+- warm up
+
+- http request flow
+- web architecture
+- requests GET/POST/...
+- minimal web application
+- parameters parsing
+- response generating
