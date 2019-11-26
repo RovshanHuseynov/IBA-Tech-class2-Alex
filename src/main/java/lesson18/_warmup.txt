@@ -1,9 +1,9 @@
-http://localhost:8001/hello/Alex
+http://localhost:8001/hello/7575687
 http://localhost:8001/bye
 
 - write TWO servlets,
 invent the way how to exchange
 the data between servlets
 write in the browser
-"Hello, Alex!" / "Bye, Alex!"
+"Hello, 7575687!" / "Bye, 7575687!"
 according to servlet chosen

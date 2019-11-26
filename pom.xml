@@ -41,6 +41,5 @@
             <artifactId>jetty-servlet</artifactId>
             <version>9.4.23.v20191118</version>
         </dependency>
-
     </dependencies>
 </project>
