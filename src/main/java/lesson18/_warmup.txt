@@ -5,5 +5,5 @@ write TWO servlets,
 invent the way how to exchange the data between servlets
 write in the browser
 "Hello, Alex!"
- or
- "Bye, Alex!"
+or
+"Bye, Alex!"
