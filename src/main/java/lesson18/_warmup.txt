@@ -1,7 +1,9 @@
-http://localhost/hello/Alex
-http://localhost/bye
+http://localhost:8001/hello/Alex
+http://localhost:8001/bye
 
-write servlet,
-parse the address
-parse the line
-write in the browser "Hello, Alex!" or "Bye, Alex!"
+write TWO servlets,
+invent the way how to exchange the data between servlets
+write in the browser
+"Hello, Alex!"
+ or
+ "Bye, Alex!"
