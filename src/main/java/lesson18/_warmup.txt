@@ -5,6 +5,5 @@ http://localhost:8001/bye
 invent the way how to exchange
 the data between servlets
 write in the browser
-"Hello, Alex!"
-or
-"Bye, Alex!"
+"Hello, Alex!" / "Bye, Alex!"
+according to servlet chosen
