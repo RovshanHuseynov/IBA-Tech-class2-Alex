@@ -1,17 +1,14 @@
 package lesson19.db;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.List;
 
 public class DatabaseApp {
   public static void main(String[] args) throws SQLException {
-    Connection conn = DbConn.get();
-    String SQLI = "insert into users (name, email) values (?, ?)";
-    PreparedStatement stmt = conn.prepareStatement(SQLI);
-    stmt.setString(1, "Jack");
-    stmt.setString(2, "jack@amazon.com");
-    stmt.execute();
+//    DbOps.insert_user("Mario", "mario@i.ua");
+    List<User> users = DbOps.get_all_users();
+    users.forEach(u ->
+        System.out.printf("%d : %-8s : %s\n",
+            u.getId(), u.getName(), u.getEmail()));
   }
 }
