@@ -22,10 +22,9 @@ public final class TemplateEngine {
   }
 
   public static TemplateEngine resources(final String path_from_project_resources) throws IOException, URISyntaxException {
-    return new TemplateEngine(Paths.get(
-        TemplateEngine.class.getResource(path_from_project_resources).toURI()
-    ).toFile().getAbsolutePath()
-    );
+    String pathToResources = Paths.get(TemplateEngine.class.getResource(path_from_project_resources).toURI())
+        .toFile().getAbsolutePath();
+    return new TemplateEngine(pathToResources);
   }
 
   public TemplateEngine(final String path) throws IOException {
