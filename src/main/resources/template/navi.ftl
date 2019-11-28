@@ -12,7 +12,7 @@
     <h1>${header}</h1>
 <list>
     <#list links as link>
-        <li><a href="${link.href}">${link.name}</li>
+        <li><a href="${link.href}">${link.name}</a></li>
     </#list>
 </list>
 </body>

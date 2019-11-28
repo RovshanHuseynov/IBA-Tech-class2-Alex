@@ -26,7 +26,8 @@ public class LoginServlet extends HttpServlet {
     data.put("header", "This is a login page");
     data.put("links", Arrays.asList(
         new LinkItem("/menu", "Menu"),
-        new LinkItem("/logout", "Logout")
+        new LinkItem("/logout", "Logout"),
+        new LinkItem("http://google.com", "Google")
     ));
     te.render("navi.ftl", data, resp);
   }
