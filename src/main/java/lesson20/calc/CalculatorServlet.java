@@ -18,13 +18,7 @@ public class CalculatorServlet extends HttpServlet {
     int op1 = Integer.parseInt(op1s);
     int op2 = Integer.parseInt(op2s);
     int id = Integer.parseInt(ids);
-    int r = -13;
-    switch (ops) {
-      case "plus" : r=op1+op2; break;
-      case "minus": r=op1-op2; break;
-      case "mult" : r=op1*op2; break;
-      case "div"  : r=op1/op2; break;
-    }
+    int r = Calc20.do_op(op1, op2, ops);
     DbOps.insert_op(op1, op2, ops, r, id);
   }
 }
