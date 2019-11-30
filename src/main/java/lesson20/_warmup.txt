@@ -1,0 +1,8 @@
+You've given the number N
+create an array with length of N
+fill it by the following rule:
+if N is odd -
+[...,5,4,3,2,1,0,1,2,3,4,5,...]
+if N is even
+[...,5,4,3,2,1,0,0,1,2,3,4,5,...]
+usage of 'if' statement is FORBIDDEN
