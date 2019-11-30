@@ -15,9 +15,11 @@ public class WeirdReq {
 //    int val = n/2;
 //    if (n%2 == 0) val--;
     // approach 3
-    int val = (n>>1) + (n&1) - 1;
+//    int val = (n>>1) + (n&1) - 1;
     // approach 4
 //    int val = (n>>1) - ((n+1)&1);
+    // approach 5
+    int val = (n-1) >> 1;
 
     for (int i = 0; i < n / 2; i++, val--) {
       ints[i] = val;
