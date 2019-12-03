@@ -1,0 +1,7 @@
+- warm up
+
+- maven
+- running from command line
+- heroku deployment
+
+- step project

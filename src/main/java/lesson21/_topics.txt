@@ -2,8 +2,5 @@
 
 - Servlet Filters
 - Cookies
+- Logging
 - JSON (Jackson)
-
----
-- maven
-- running from command line
