@@ -3,8 +3,8 @@ Code from classes:
 https://gitlab.com/dan-it/az-groups/az-be2-classes - Link to open in the browser
 https://gitlab.com/dan-it/az-groups/az-be2-classes.git - Link to clone the project via git / Idea
 
-Homework & Step Project:
-========================
+Homework & Step Projects:
+=========================
 https://gitlab.com/dan-it/az-groups/az-be2 - Link to open in the browser
 https://gitlab.com/dan-it/az-groups/az-be2.git - Link to clone the project via git / Idea
 
