@@ -1,14 +1,12 @@
 Code from classes:
 ==================
-https://gitlab.com/dan-it/az-groups/az-be2-classes
--> https://gitlab.com/dan-it/az-groups/az-be2-classes.git
-git@gitlab.com:dan-it/az-groups/az-be2-classes.git (ssh key uploading required)
+https://gitlab.com/dan-it/az-groups/az-be2-classes - Link to open in the browser
+https://gitlab.com/dan-it/az-groups/az-be2-classes.git - Link to clone the project via git / Idea
 
-Homework:
-=========
-https://gitlab.com/dan-it/az-groups/az-be2
--> https://gitlab.com/dan-it/az-groups/az-be2.git
-git@gitlab.com:dan-it/az-groups/az-be2.git (ssh key uploading required)
+Homework & Step Project:
+========================
+https://gitlab.com/dan-it/az-groups/az-be2 - Link to open in the browser
+https://gitlab.com/dan-it/az-groups/az-be2.git - Link to clone the project via git / Idea
 
 alexr repos:
 ============
