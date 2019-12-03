@@ -24,7 +24,12 @@ public class NestedAppOptimized {
     ss.getMax();
     ss.getAverage();
     ss.getCount();
+    // will not work !!!
+    // stream is intended for single usage!
+//    Stream<Integer> stream = Stream.of(1, 2, 3);
+//    stream.forEach(System.out::println);
+//    stream.forEach(System.out::println);
 
-//    Optional<Integer> min = Stream.of(1, 2, 3).min((o1, o2) -> o1 - o2);
+    Optional<Integer> min = Stream.of(1, 2, 3).min((o1, o2) -> o1 - o2);
   }
 }
