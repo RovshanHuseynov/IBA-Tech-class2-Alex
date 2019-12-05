@@ -5,10 +5,12 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 public class ReflectionBasics {
-  public static void main(String[] args) throws
+  public static void main(String[] args)
+      throws
       ClassNotFoundException, IllegalAccessException,
       InstantiationException, NoSuchMethodException,
-      InvocationTargetException {
+      InvocationTargetException
+  {
     String class_name = "lesson23.reflection.Point2D";
     Class<?> aClass = Class.forName(class_name);
     Constructor<?>[] constructors = aClass.getConstructors();
@@ -42,6 +44,5 @@ public class ReflectionBasics {
         }
       }
     }
-
   }
 }
