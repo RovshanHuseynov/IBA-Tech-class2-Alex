@@ -1,7 +1,10 @@
 - warm up
 
 - step project
-- reflection
+- predicate
+
+- java reflection
+- annotations
 - dependency injection
 - inversion of control
 
