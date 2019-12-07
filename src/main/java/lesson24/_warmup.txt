@@ -3,4 +3,4 @@ in the range [10..25]
 calculate the number of repetitions
 for each number
 find the number which appeared
-the minimal number of repetitions
+the minimal number of occurrences
