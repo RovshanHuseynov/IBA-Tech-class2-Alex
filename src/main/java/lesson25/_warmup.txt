@@ -4,6 +4,7 @@ put them into 3 different groups:
 1. negatives < -10
 2. positives > 10
 3. residual items
+
 and each group must be split
 on odd and even elements
 
