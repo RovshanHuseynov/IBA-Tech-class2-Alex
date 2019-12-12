@@ -5,7 +5,7 @@ public class Point {
   public final int y;
 
   public static Point rnd() {
-    return new Point(Fn.rnd(), Fn.rnd());
+    return Point.of(Fn.rnd(), Fn.rnd());
   }
 
   public static Point of(int x, int y) {
